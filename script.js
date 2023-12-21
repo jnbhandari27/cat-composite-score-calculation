@@ -9,7 +9,7 @@ function calculateScore() {
     const category = document.getElementById("category").value;
 
     // Perform composite score calculation based on FMS formula (adjust as needed)
-    const compositeScore = (varc * 0.4) + (dilr * 0.3) + (qa * 0.3);
+    const compositeScore = (varc *40)/72 + (dilr * 30)/60 + (qa * 30)/60;
 
     // Retrieve minimum scores from RTI data based on category
     const minScoreForInterview = getMinScoreForCategory(category, "interview");
