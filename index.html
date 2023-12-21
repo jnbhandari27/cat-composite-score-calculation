@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMS Composite Score Calculator</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <header>
+        <h1>FMS Composite Score Calculator</h1>
+    </header>
+
+    <main>
+        <section class="calculator">
+            <h2>Calculate Your Composite Score</h2>
+            <form id="score-form">
+                <div>
+                    <label for="varc">VARC Score:</label>
+                    <input type="number" id="varc" required>
+                </div>
+                <div>
+                    <label for="dilr">DILR Score:</label>
+                    <input type="number" id="dilr" required>
+                </div>
+                <div>
+                    <label for="qa">QA Score:</label>
+                    <input type="number" id="qa" required>
+                </div>
+                <div>
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="general">General</option>
+                        <option value="ews">EWS</option>
+                        <option value="nc-obc">NC-OBC</option>
+                        <option value="sc">SC</option>
+                        <option value="st">ST</option>
+                        <option value="pwd">PWD</option>
+                    </select>
+                </div>
+                <button type="button" onclick="calculateScore()">Calculate Score</button>
+            </form>
+            <div id="results"></div>
+        </section>
+
+        <section class="rti-data">
+            <h2>Past RTI Data</h2>
+            </section>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script> </body>
+</html>
