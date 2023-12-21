@@ -1,1 +1,1 @@
-#IIM Composite Score calculation 
+IIM Composite Score calculation 
