@@ -1,1 +1,1 @@
-# cat-composite-score-calculation
+#IIM Composite Score calculation 
